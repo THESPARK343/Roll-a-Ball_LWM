@@ -24,22 +24,22 @@ public class pTwoMove : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow)) // gets input entire time key is pressed
         {
             gameObject.GetComponent<Rigidbody>().velocity = Vector3.forward * MoveSpeed;
-            gameObject.GetComponent<Rigidbody>().velocity = Vector3.down * MoveSpeed; // applies force 
+          // applies force 
         }
         if (Input.GetKey(KeyCode.DownArrow)) // gets input 
         {
             gameObject.GetComponent<Rigidbody>().velocity = Vector3.back * MoveSpeed;
-            gameObject.GetComponent<Rigidbody>().velocity = Vector3.down * MoveSpeed;    // applies force 
+                // applies force 
         }
         if (Input.GetKey(KeyCode.RightArrow)) // gets input 
         {
             gameObject.GetComponent<Rigidbody>().velocity = Vector3.right * MoveSpeed;
-            gameObject.GetComponent<Rigidbody>().velocity = Vector3.down * MoveSpeed;   // applies force 
+             // applies force 
         }
         if (Input.GetKey(KeyCode.LeftArrow)) // gets input 
         {
             gameObject.GetComponent<Rigidbody>().velocity = Vector3.left * MoveSpeed;
-            gameObject.GetComponent<Rigidbody>().velocity = Vector3.down * MoveSpeed;    // applies force 
+               // applies force 
         }
         void OnTriggerEnter(Collider other)
         {
